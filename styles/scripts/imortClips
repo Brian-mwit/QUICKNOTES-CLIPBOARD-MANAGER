@@ -1,0 +1,30 @@
+function importClips(event) {
+    console.log("Import triggered"); // Debug line
+    const file = event.target.files[0];
+    if (!file) {
+        console.log("No file selected");
+        return;
+    }
+    
+    const reader = new FileReader();
+    reader.onload = (e) => {
+        try {
+            console.log("File content:", e.target.result); // Debug line
+            const importedClips = JSON.parse(e.target.result);
+            if (Array.isArray(importedClips)) {
+                const currentClips = loadClips();
+                const mergedClips = [...importedClips, ...currentClips];
+                saveClips(mergedClips);
+                renderClips(mergedClips);
+                alert('Clips imported successfully!');
+            } else {
+                throw new Error('Invalid file format - expected array');
+            }
+        } catch (error) {
+            console.error("Import error:", error); // Debug line
+            alert('Error importing clips: ' + error.message);
+        }
+    };
+    reader.readAsText(file);
+    event.target.value = '';
+}

@@ -1,0 +1,60 @@
+{
+  "clips": [
+    {
+      "id": 1,
+      "content": "Team meeting agenda:\n1. Q2 Results\n2. New project kickoff\n3. Roadmap review",
+      "isFavorite": true,
+      "tags": ["work", "meeting"],
+      "timestamp": "2025-06-21T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "content": "https://github.com/features/copilot",
+      "isFavorite": false,
+      "tags": ["dev", "research"],
+      "timestamp": "2025-06-21T11:15:00Z"
+    },
+    {
+      "id": 3,
+      "content": "Dinner recipe: https://www.allrecipes.com/recipe/20144/banana-banana-bread/",
+      "isFavorite": true,
+      "tags": ["cooking", "personal"],
+      "timestamp": "2025-06-21T12:45:00Z"
+    },
+    {
+      "id": 4,
+      "content": "Flight confirmation: DL2471 JFK→SFO 6/25 9:15AM",
+      "isFavorite": false,
+      "tags": ["travel"],
+      "timestamp": "2025-06-21T14:20:00Z"
+    },
+    {
+      "id": 5,
+      "content": "Important client email: j.smith@company.com",
+      "isFavorite": true,
+      "tags": ["work", "contacts"],
+      "timestamp": "2025-06-21T15:30:00Z"
+    },
+    {
+      "id": 6,
+      "content": "React documentation: https://react.dev/learn",
+      "isFavorite": false,
+      "tags": ["dev", "reference"],
+      "timestamp": "2025-06-21T16:45:00Z"
+    },
+    {
+      "id": 7,
+      "content": "Conference call details:\nZoom ID: 555-123-4567\nPasscode: 7890",
+      "isFavorite": true,
+      "tags": ["work"],
+      "timestamp": "2025-06-22T08:15:00Z"
+    },
+    {
+      "id": 8,
+      "content": "Interesting article: https://www.scientificamerican.com/article/the-science-of-habit/",
+      "isFavorite": false,
+      "tags": ["reading", "psychology"],
+      "timestamp": "2025-06-22T10:00:00Z"
+    }
+  ]
+}

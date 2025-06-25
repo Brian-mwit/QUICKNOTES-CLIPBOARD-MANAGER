@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes - Smart Clipboard Manager</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>QuickNotes</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search clip...">
+            </div>
+            <div class="controls">
+                <button id="themeToggle">Dark Mode</button>
+                <button id="exportBtn">Export Clips</button>
+                <input type="file" id="importInput" accept=".json" style="display: none;">
+                <button id="importBtn">Import Clips</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="clipboard-list" id="clipboardList"></div>
+        </main>
+    </div>
+
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
